@@ -1,0 +1,70 @@
+<!--
+  Copyright 2024 Google LLC
+  SPDX-License-Identifier: Apache-2.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta http-equiv="origin-trial" content="AoVhEqBM5YGvc7Q/b9rxUDDczeHalzBE/8HDwEBOCpGxz9UaEC64LZaNzeMDcFuqRSuTc/5L4gXrpGHX1qw3YAEAAABVeyJvcmlnaW4iOiJodHRwOi8vMTI3LjAuMC4xOjU1MDAiLCJmZWF0dXJlIjoiQUlTdW1tYXJpemF0aW9uQVBJIiwiZXhwaXJ5IjoxNzUzMTQyNDAwfQ==" /> 
+    <meta http-equiv="origin-trial" content="Aq5hiA5aQAHJiOnx6WXsHiHIKElpUaZwD3E6lu5IWBRz/l2cBxQXRZuBRPsYViF4fvzwo4fghvSk0NNeqDIElQoAAABReyJvcmlnaW4iOiJodHRwOi8vMTI3LjAuMC4xOjU1MDAiLCJmZWF0dXJlIjoiVHJhbnNsYXRpb25BUEkiLCJleHBpcnkiOjE3NTMxNDI0MDB9" />
+
+
+<meta http-equiv="origin-trial" content="AnDB/yjkOZRL9Y/h5IkOFSOgWe4zTAXK0TCNguiQhwhfP5ugeFLoHNekF4MXX7xfLXYSvmGAyUX8PgxOjxKQ1wcAAABXeyJvcmlnaW4iOiJodHRwOi8vMTI3LjAuMC4xOjU1MDAiLCJmZWF0dXJlIjoiTGFuZ3VhZ2VEZXRlY3Rpb25BUEkiLCJleHBpcnkiOjE3NTc5ODA4MDB9" />    
+<link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💬</text></svg>"
+    />
+    <title>Translator and Language Detector API Playground</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      if (!isSecureContext) location.protocol = 'https:';
+    </script>
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <!-- <h1>🌍 Language Detection & Translation</h1>
+    <p class="not-supported-message" hidden>Your browser does not support AI Translation or Detection.</p>
+  
+    <textarea placeholder="Type something to detect and translate..."></textarea>
+    <div>
+      <label for="target">Translate to:</label>
+      <select id="target">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="ja">Japanese</option>
+      </select>
+      <button>Translate</button>
+    </div>
+  
+    <div>
+      <p id="detection-result">Detection: <em>Waiting for input...</em></p>
+      <output id="translated-output"></output>
+    </div> -->
+
+    <form>
+      <textarea placeholder="Paste text here…" rows="6" cols="60"></textarea>
+      <select>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="ja">Japanese</option>
+        <option value="fr">French</option>
+      </select>
+      <button type="submit">Translate</button>
+    </form>
+    
+    <p><strong>Detected language:</strong> <span class="detected">—</span></p>
+    <output class="translated">Translated text will appear here…</output>
+    <!-- <p><strong>Summary:</strong> <span class="summary">—</span></p> -->
+    
+<button id="summarize">Summarize</button>
+<pre class="summary">Summary will appear here…</pre>
+
+    
+    <p class="not-supported-message" hidden>This browser does not support required AI APIs.</p>
+    
+  </body>
+</html>
